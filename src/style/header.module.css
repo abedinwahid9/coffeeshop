@@ -1,0 +1,81 @@
+/* header component*/
+
+header {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--mainColor);
+  /* box-shadow: 0 3px 10px rgb(255, 255, 255); */
+  /* box-shadow: 0 3px 10px rgb(253, 126, 7); */
+  position: fixed;
+  overflow: hidden;
+  -webkit-box-shadow: -2px -5px 35px 6px rgba(253, 126, 7);
+  -moz-box-shadow: -2px -5px 35px 6px rgba(253, 126, 7);
+  box-shadow: -2px -2px 35px 6px rgba(253, 126, 7);
+  z-index: 99999;
+  top: 0;
+}
+
+/* logo component */
+.logo {
+  width: 40%;
+}
+.logo li {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  margin-left: 20px;
+}
+
+.logo li a {
+  display: flex;
+  align-items: center;
+  color: var(--fontColor);
+  font-size: var(--fontSize);
+}
+
+h4 {
+  margin-bottom: 8px;
+  font-weight: 800;
+}
+
+.logo img {
+  width: 60px;
+  height: 60px;
+}
+
+/* navbar component*/
+nav {
+  width: 50%;
+  margin-right: 20px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* homeButton component */
+.homeButton {
+  font-size: var(--fontSize);
+  border: none;
+  outline: none;
+  background: none;
+  letter-spacing: 1px;
+  width: 80px;
+  height: 20px;
+  background: red;
+  padding: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.homeButton:hover {
+  background-color: var(--successColor);
+  color: var(--fontColor);
+}

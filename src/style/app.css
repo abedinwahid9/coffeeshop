@@ -1,0 +1,49 @@
+:root {
+  --mainColor: #3c2a1d;
+  --fontColor: #f8f4f1;
+  --fontSize: 1.1rem;
+  --successColor: #8b654a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  user-select: none;
+}
+
+::-webkit-scrollbar {
+  width: 1px; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background: #ff0000;
+}
+
+body {
+  width: 100%;
+  height: auto;
+  /* font-family: "Roboto", sans-serif; */
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+a {
+  color: var(--fontColor);
+  font-size: var(--fontSize);
+  font-weight: 400;
+}
+
+a:hover {
+  color: var(--successColor);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

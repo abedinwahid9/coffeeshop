@@ -1,0 +1,29 @@
+.swiper {
+  width: 900px;
+  height: 400px;
+}
+
+.swiper-slide {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.swiper-slide h1 {
+  position: absolute;
+  top: 0;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+
+.swiper img {
+  width: 500px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 20px;
+  top: 10px;
+}

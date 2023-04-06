@@ -1,0 +1,34 @@
+.inputText {
+  width: 100%;
+  height: 30px;
+  /* background-color: #f8f4f1; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid var(--successColor);
+  margin-bottom: 5px;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: var(--fontColor);
+  opacity: 1; /* Firefox */
+}
+
+.inputText input {
+  width: 100%;
+  font-size: var(--fontSize);
+  color: var(--fontColor);
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.inputText span {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}

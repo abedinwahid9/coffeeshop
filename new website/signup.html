@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" href="./asset/favicon.ico" type="image/icon type" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+      rel="stylesheet"
+    />
+    <title>sign up</title>
+  </head>
+  <body>
+    <header>
+      <ul class="logo">
+        <li>
+          <a href="/index.html"
+            ><img src="./asset/logo.png" alt="logo" />
+            <h4>Coffee Shop</h4>
+          </a>
+        </li>
+      </ul>
+      <nav class="navbar">
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">Items</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Contact</a></li>
+          <li>
+            <a href="/login.html"><button class="homeButton">Login</button></a>
+          </li>
+          <!-- <li>
+            <a href=""><button class="button">Login</button></a>
+          </li> -->
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <div class="account">
+          <form class="accountSection" action="#">
+            <div class="inputText">
+              <input type="text" placeholder="enter your name" />
+              <span class="material-icons-outlined"> person </span>
+            </div>
+            <div class="inputText">
+              <input type="email" placeholder="enter your email" />
+              <span class="material-icons-outlined"> alternate_email </span>
+            </div>
+            <div class="inputText">
+              <input type="password" placeholder="enter your password" />
+              <span class="material-icons-outlined"> lock </span>
+            </div>
+            <div class="inputText">
+              <input type="password" placeholder="enter your password" />
+              <span class="material-icons-outlined"> lock_clock </span>
+            </div>
+            <label for="checkboxId">
+              <input type="checkbox" id="checkboxId" />
+              <span>I agree to the Terms & Conditions</span>
+            </label>
+            <div class="button">
+              <input type="submit" />
+            </div>
+          </form>
+          <div class="info">
+            <span
+              >you have already an account,<a href="/login.html"> login </a
+              >here</span
+            >
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

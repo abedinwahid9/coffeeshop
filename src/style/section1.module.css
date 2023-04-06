@@ -1,0 +1,31 @@
+/* section1 component */
+
+.section1 {
+  padding-top: 10%;
+  background: url(../asset/logo/section1.jpg);
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.queto {
+  width: 80%;
+  margin-top: 10%;
+  text-align: center;
+  color: var(--fontColor);
+  text-shadow: 3px 3px 2px rgba(105, 119, 128, 1);
+}
+.queto h1 {
+  font-size: 2rem;
+}
+
+.queto h6 {
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 10px;
+  font-size: var(--fontSize);
+}

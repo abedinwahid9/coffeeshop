@@ -1,0 +1,13 @@
+/* section 2 component */
+
+.section2 {
+  width: 100%;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  position: absolute;
+  bottom: -30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

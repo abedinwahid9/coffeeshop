@@ -1,0 +1,30 @@
+.button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--mainColor);
+  margin-top: 5px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+.button:hover {
+  background-color: var(--successColor);
+}
+
+.button span {
+  background: none;
+  padding: 10px 0;
+  font-size: var(--fontSize);
+  color: var(--fontColor);
+}
+
+.button:hover span {
+  color: #000;
+}
+
+label input {
+  margin-right: 5px;
+}

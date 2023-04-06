@@ -1,0 +1,33 @@
+/* navbar component*/
+nav {
+  width: 50%;
+  margin-right: 20px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* homeButton component */
+.homeButton {
+  font-size: var(--fontSize);
+  border: none;
+  outline: none;
+  background: none;
+  letter-spacing: 1px;
+  width: 80px;
+  height: 20px;
+  background: red;
+  padding: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.homeButton:hover {
+  background-color: var(--successColor);
+  color: var(--fontColor);
+}
