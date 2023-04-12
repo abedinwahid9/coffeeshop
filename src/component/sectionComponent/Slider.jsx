@@ -1,4 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Link } from "react-router-dom";
 
 // Import Swiper styles
 import "swiper/css";
@@ -6,41 +7,20 @@ import "swiper/css/zoom";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/autoplay";
+import Button from "../Button/Button";
 
 import "../../style/slider.css";
 
 // import required modules
 import { Zoom, Navigation, Pagination, Autoplay } from "swiper";
+import { useState } from "react";
+import { sliderImg } from "../../data/itemDetails";
 
-const sliderImg = [
-  {
-    title: "expresso",
-    img: "https://source.unsplash.com/QxL6R8_bQ_4",
-  },
-  {
-    title: "cappuccino",
-    img: "https://source.unsplash.com/47cW0To8dQY",
-  },
-  {
-    title: "latte",
-    img: "https://source.unsplash.com/7CwiC9GFzxA",
-  },
-  {
-    title: "mocha",
-    img: "https://source.unsplash.com/j2SZHDrMgsE",
-  },
-
-  {
-    title: "americano",
-    img: "https://source.unsplash.com/SKoZa7rcLlU",
-  },
-  {
-    title: "macciato",
-    img: "https://source.unsplash.com/bbNssNJlsrk",
-  },
-];
+const Img = sliderImg;
 
 export default function App() {
+  const [onMouse, setonMouse] = useState(false);
+
   return (
     <>
       <Swiper
@@ -60,15 +40,22 @@ export default function App() {
         modules={[Zoom, Navigation, Pagination, Autoplay]}
         className="mySwiper"
       >
-        {sliderImg.map((img) => {
+        {Img.map((img) => {
           return (
-            <SwiperSlide>
+            <SwiperSlide key={img.id}>
               <h1>{img.title}</h1>
               <div className="swiper-zoom-container">
-                <a href="#">
-                  <img src={img.img} />
-                  <button>click here</button>
-                </a>
+                <Link
+                  to="/itemrecipe"
+                  onMouseEnter={() => setonMouse(true)}
+                  onMouseLeave={() => setonMouse(false)}
+                >
+                  <img src={img.img} className="img" />
+                  <Button
+                    className={`view-button ${onMouse ? "show" : ""}`}
+                    title="view details"
+                  />
+                </Link>
               </div>
             </SwiperSlide>
           );

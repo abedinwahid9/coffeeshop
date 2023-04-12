@@ -4,11 +4,8 @@ window.onload = () => {
   main();
 };
 
-function main() {
+export function main() {
   const buttonView = document.querySelectorAll(".view-button");
-  const cardBody = document.querySelectorAll(".card-body");
-
-  // console.log(buttonView);
 
   buttonView.forEach((button) => {
     button.addEventListener("click", myFunction);

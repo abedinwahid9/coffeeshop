@@ -1,9 +1,11 @@
-export default function SocialContact({ icon, ...rest }) {
+import { Link } from "react-router-dom";
+
+export default function SocialContact({ icon, pathName, ...rest }) {
   return (
     <div {...rest}>
-      <a href="">
+      <Link to={pathName} target="_blank">
         <i className={icon}></i>
-      </a>
+      </Link>
     </div>
   );
 }

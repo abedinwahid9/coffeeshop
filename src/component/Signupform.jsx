@@ -35,7 +35,7 @@ export default function Signupform() {
         </From>
         <Accountcontent
           title="you have already an account"
-          href="/login.html"
+          path="/login"
           type="login"
         />
       </AccountContainer>
