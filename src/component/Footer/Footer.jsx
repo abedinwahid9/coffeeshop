@@ -6,11 +6,31 @@ export default function Footer() {
     <>
       <footer className={classes.footer} id="about">
         <div className={classes.socialInfo}>
-          <SocialContact className={classes.miniLogo} icon="fab fa-google" />
-          <SocialContact className={classes.miniLogo} icon="fab fa-facebook" />
-          <SocialContact className={classes.miniLogo} icon="fab fa-twitter" />
-          <SocialContact className={classes.miniLogo} icon="fab fa-instagram" />
-          <SocialContact className={classes.miniLogo} icon="fab fa-linkedin" />
+          <SocialContact
+            className={classes.miniLogo}
+            icon="fab fa-google"
+            pathName="https://www.google.com"
+          />
+          <SocialContact
+            className={classes.miniLogo}
+            icon="fab fa-facebook"
+            pathName="https://www.facebook.com"
+          />
+          <SocialContact
+            className={classes.miniLogo}
+            icon="fab fa-twitter"
+            pathName="https://www.twitter.com"
+          />
+          <SocialContact
+            className={classes.miniLogo}
+            icon="fab fa-instagram"
+            pathName="https://www.instagram.com"
+          />
+          <SocialContact
+            className={classes.miniLogo}
+            icon="fab fa-linkedin"
+            pathName="https://www.linkedin.com"
+          />
         </div>
       </footer>
     </>

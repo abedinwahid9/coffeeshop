@@ -1,10 +1,11 @@
-import classes from "../style/container.module.css";
+import classes from "../style/accountContainer.module.css";
+import Container from "./Container";
 
 export default function AccountContainer({ children, title }) {
   return (
-    <div className={classes.container}>
+    <Container>
       <h1 className={classes.title}>{title}</h1>
       <div className={classes.account}>{children}</div>
-    </div>
+    </Container>
   );
 }

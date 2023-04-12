@@ -18,6 +18,7 @@
   text-transform: uppercase;
   font-weight: 600;
   font-size: 1.8rem;
+  text-align: center;
 }
 
 .swiper img {
@@ -26,4 +27,37 @@
   object-fit: cover;
   border-radius: 20px;
   top: 10px;
+}
+
+.swiper-slide a {
+  position: relative;
+}
+
+.view-button {
+  position: absolute;
+  bottom: 5px;
+  right: 0;
+  width: 100%;
+  height: 35px;
+  background-color: var(--mainColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.1s;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  display: none;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  transition: 2s;
+}
+
+.view-button span {
+  color: var(--fontColor);
+  font-size: var(--fontSize);
+}
+
+.show {
+  display: block;
 }

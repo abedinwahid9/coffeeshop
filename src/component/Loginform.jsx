@@ -5,10 +5,10 @@ import Button from "./Button/Button";
 import classes from "../style/signup.module.css";
 import Accountcontent from "./Accountcontent";
 
-export default function Loginform(params) {
+export default function Loginform() {
   return (
     <>
-      <AccountContainer>
+      <AccountContainer title="login account">
         <Form>
           <TextInput
             type="email"
@@ -22,11 +22,7 @@ export default function Loginform(params) {
           />
           <Button className={classes.button} type="submit" title="Login" />
         </Form>
-        <Accountcontent
-          title="create an new"
-          href="/signup.html"
-          type="account"
-        />
+        <Accountcontent title="create an new" path="/signup" type="account" />
       </AccountContainer>
     </>
   );

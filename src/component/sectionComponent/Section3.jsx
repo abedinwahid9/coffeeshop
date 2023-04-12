@@ -1,6 +1,7 @@
 import classes from "../../style/section3.module.css";
 import TextInput from "../TextInput";
 import Form from "../Form";
+import Button from "../Button/Button";
 
 export default function Section3() {
   return (
@@ -23,9 +24,7 @@ export default function Section3() {
             <div className={classes.textarea}>
               <textarea placeholder="enter you comment"></textarea>
             </div>
-            <div className="button">
-              <input type="submit" />
-            </div>
+            <Button className={classes.button} type="submit" title="submit" />
           </Form>
         </div>
       </section>
