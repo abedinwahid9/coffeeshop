@@ -3,7 +3,8 @@ import Button from "../Button/Button";
 import { NavLink, useLocation } from "react-router-dom";
 import { useEffect } from "react";
 
-export default function Nav() {
+export default function Nav({ active }) {
+  console.log(active);
   const location = useLocation();
 
   useEffect(() => {
@@ -19,8 +20,8 @@ export default function Nav() {
 
   return (
     <>
-      <nav className={classes.navbar}>
-        <ul>
+      <nav>
+        <ul className={active ? classes.active : ""}>
           <li>
             <NavLink to="/home">Home</NavLink>
           </li>
@@ -45,9 +46,6 @@ export default function Nav() {
             )}
           </li>
         </ul>
-        <div className={classes.manubar}>
-          <i class="fa-solid fa-bars"></i>
-        </div>
       </nav>
     </>
   );

@@ -5,17 +5,16 @@ header {
   height: 70px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  padding: 10px 0;
   background: var(--mainColor);
-  /* box-shadow: 0 3px 10px rgb(255, 255, 255); */
-  /* box-shadow: 0 3px 10px rgb(253, 126, 7); */
+
   position: fixed;
   overflow: hidden;
   -webkit-box-shadow: -2px -5px 35px 6px rgba(253, 126, 7);
   -moz-box-shadow: -2px -5px 35px 6px rgba(253, 126, 7);
   box-shadow: -2px -2px 35px 6px rgba(253, 126, 7);
   z-index: 99999;
-  top: 0;
+  transition: 1s;
 }
 
 /* logo component */
@@ -46,8 +45,38 @@ h4 {
   height: 60px;
 }
 
+.manubar {
+  display: none;
+}
+
 @media only screen and (max-width: 800px) {
   .logo {
-    width: 70%;
+    width: 50%;
+  }
+
+  .active {
+    height: 300px;
+    transition: 1s;
+  }
+
+  .manubar {
+    display: block;
+    font-size: 1.6rem;
+    margin-right: 2%;
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  /* .active Nav {
+    display: none;
+  } */
+
+  .active .icon {
+    color: var(--fontColor);
+    border: 2px solid var(--fontColor);
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
   }
 }
