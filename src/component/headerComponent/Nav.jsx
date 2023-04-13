@@ -45,6 +45,9 @@ export default function Nav() {
             )}
           </li>
         </ul>
+        <div className={classes.manubar}>
+          <i class="fa-solid fa-bars"></i>
+        </div>
       </nav>
     </>
   );
