@@ -29,3 +29,14 @@
   margin-top: 10px;
   font-size: var(--fontSize);
 }
+
+@media only screen and (max-width: 425px) {
+  .queto {
+    margin-top: 18%;
+    width: 90%;
+  }
+
+  .queto h1 {
+    font-size: 1.6rem;
+  }
+}

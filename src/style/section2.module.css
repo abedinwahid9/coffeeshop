@@ -6,8 +6,38 @@
   font-size: 14px;
   color: #000;
   position: absolute;
-  bottom: -30%;
+  bottom: 0%;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* @media only screen and (max-width: 1280px) {
+  .section2 {
+    bottom: -25.1%;
+  }
+} */
+
+@media only screen and (max-width: 1024px) {
+  .section2 {
+    bottom: -28.7%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .section2 {
+    bottom: -32.9%;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .section2 {
+    bottom: -22.5%;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .section2 {
+    bottom: -19.9%;
+  }
 }

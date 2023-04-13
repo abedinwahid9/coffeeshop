@@ -28,10 +28,10 @@ export default function App() {
           "--swiper-navigation-color": "var(--mainColor)",
           "--swiper-pagination-color": "#var(--mainColor)",
         }}
-        autoplay={{
-          delay: 3000,
-          disableOnInteraction: false,
-        }}
+        // autoplay={{
+        //   delay: 3000,
+        //   disableOnInteraction: false,
+        // }}
         zoom={true}
         navigation={true}
         pagination={{

@@ -10,6 +10,32 @@ nav ul {
   align-items: center;
 }
 
+.manubar {
+  display: none;
+}
+@media only screen and (max-width: 1280px) {
+  nav {
+    width: 60%;
+    margin-right: 10px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10px;
+  }
+
+  nav ul {
+    display: none;
+  }
+  .manubar {
+    display: block;
+    font-size: 1.8rem;
+  }
+}
+
 /* homeButton component */
 .homeButton {
   font-size: var(--fontSize);
@@ -30,11 +56,4 @@ nav ul {
 .homeButton:hover {
   background-color: var(--successColor);
   color: var(--fontColor);
-}
-
-@media only screen and (max-width: 1400px) {
-  nav {
-    width: 60%;
-    margin-right: 10px;
-  }
 }
