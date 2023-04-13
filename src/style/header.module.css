@@ -71,6 +71,12 @@ h4 {
   /* .active Nav {
     display: none;
   } */
+  .icon {
+    border: 2px solid var(--mainColor);
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+  }
 
   .active .icon {
     color: var(--fontColor);
