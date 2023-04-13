@@ -3,10 +3,18 @@ import image from "../../asset/logo/logo.png";
 import Nav from "./Nav";
 import { Link } from "react-router-dom";
 
+import { useState } from "react";
+
 export default function Header() {
+  const [active, setActive] = useState(false);
+
+  function handleActive() {
+    setActive(!active);
+  }
+
   return (
     <>
-      <header>
+      <header className={active ? classes.active : ""}>
         <ul className={classes.logo}>
           <li>
             <Link to="/">
@@ -15,7 +23,10 @@ export default function Header() {
             </Link>
           </li>
         </ul>
-        <Nav />
+        <div className={classes.manubar} onClick={handleActive}>
+          <i className={`${classes.icon} fa-solid fa-bars`}></i>
+        </div>
+        <Nav active={active} />
       </header>
     </>
   );
