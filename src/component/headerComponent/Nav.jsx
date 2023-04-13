@@ -4,7 +4,6 @@ import { NavLink, useLocation } from "react-router-dom";
 import { useEffect } from "react";
 
 export default function Nav({ active }) {
-  console.log(active);
   const location = useLocation();
 
   useEffect(() => {
