@@ -31,3 +31,10 @@ nav ul {
   background-color: var(--successColor);
   color: var(--fontColor);
 }
+
+@media only screen and (max-width: 1400px) {
+  nav {
+    width: 60%;
+    margin-right: 10px;
+  }
+}
