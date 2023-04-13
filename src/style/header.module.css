@@ -46,36 +46,17 @@ h4 {
   height: 60px;
 }
 
-/* navbar component*/
-nav {
-  width: 50%;
-  margin-right: 20px;
-}
+@media only screen and (min-width: 2100px) {
+  header {
+    height: 100px;
+  }
 
-nav ul {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
+  .logo {
+    width: 60%;
+  }
 
-/* homeButton component */
-.homeButton {
-  font-size: var(--fontSize);
-  border: none;
-  outline: none;
-  background: none;
-  letter-spacing: 1px;
-  width: 80px;
-  height: 20px;
-  background: red;
-  padding: 1.2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 5px;
-}
-
-.homeButton:hover {
-  background-color: var(--successColor);
-  color: var(--fontColor);
+  .logo img {
+    width: 80px;
+    height: 80px;
+  }
 }

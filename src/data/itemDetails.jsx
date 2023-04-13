@@ -3,15 +3,13 @@ export const sliderImg = [
     id: 1,
     title: "expresso",
     img: "https://source.unsplash.com/QxL6R8_bQ_4",
-    recipe:
-      "A cappuccino is an approximately 150 ml (5 oz) beverage, with 25 ml of espresso coffee and 85ml of fresh milk the foaming action creates the additional volume., ratio of 1:1:1",
+    recipe: `Use espresso roast coffee, about 9 grams for a single espresso shot and 18 grams for a double shot,`,
   },
   {
     id: 2,
     title: "cappuccino",
     img: "https://source.unsplash.com/47cW0To8dQY",
-    recipe:
-      "A cappuccino is an approximately 150 ml (5 oz) beverage, with 25 ml of espresso coffee and 85ml of fresh milk the foaming action creates the additional volume., ratio of 1:1:1",
+    recipe: `1 shot of espresso ,1/3 cup of milk ,1/3 cup of foam. Cup-size: 5 to 6 fluid ounces (150 to 180 milliliters)`,
   },
   {
     id: 3,
