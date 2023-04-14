@@ -10,6 +10,10 @@ export default function Header() {
 
   function handleActive() {
     setActive(!active);
+
+    setTimeout(() => {
+      setActive(active);
+    }, 3000);
   }
 
   return (
